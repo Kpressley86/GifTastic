@@ -1,0 +1,62 @@
+html {
+    overflow-y:scroll;
+}
+body {	
+    width: 100%;
+    height: 100%;
+    background: url(../images/background.jpeg);
+}
+h1.giphy-tastic {
+	/* font-family: ; */
+	font-size: 100px;
+	color: #525252ec;
+	text-shadow: 2px 2px #30e0ff;	
+	padding: 20px 10px 10px 20px;	
+}
+.giphyHeaderRow {
+	background-color: rgba(184, 182, 182, 0.8);
+	margin-bottom: 0px;
+	margin-top: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 1px solid #30e0ff;
+}
+.cityImg {
+	display: inline-block;
+	padding: 10px;
+	
+}
+img {
+	height: 200px;
+	width: 265px;	
+}
+.cover {
+	object-fit: cover;
+}
+.giphyImagesRow {
+	background-color: rgba(248,238,237,0.8);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.giphyButtonsRow {
+	background-color: #30e0ff;
+	padding: 20px 10px;	
+}
+.giphyButton {
+	width: 160px;
+}
+.addButton {
+	background-color: #525252ec;
+	padding: 15px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.tiny {
+	font-size: 10px;
+	text-align: center;
+	margin: 20px;
+}
+.rating {
+	/* font-family: ; */
+	font-size: 20px;
+}

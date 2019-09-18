@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gif-Tasticle Cities!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src='./assets/javascript/app.js' type="text/javascript"></script>
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 giphyHeaderRow">
+                <h1 class="text-center giphy-tastic">Gif-Tasticle Cities!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 giphyButtonsRow">
+                <div class="giphyButtons text-center"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center addButton">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" id="addButtonText" class="form-control">
+                        <input type="submit" value="Add Item" id="addButton" class="btn btn-default">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center giphyImagesRow">
+                <div class="giphyImages"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
