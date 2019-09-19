@@ -6,7 +6,7 @@ body {
     height: 100%;
     background: url(../images/background.jpeg);
 }
-h1.giphy-tastic {
+h1.gifTasticle {
 	font-family: 'Lobster', cursive;
 	font-size: 100px;
 	color: #525252ec;
@@ -16,14 +16,14 @@ h1.giphy-tastic {
 .giphyHeaderRow {
 	background-color: rgba(184, 182, 182, 0.8);
 	margin-bottom: 0px;
-	margin-top: 10px;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	margin-top: 20px;
+	border-top-right-radius: 90px;
+	border-top-left-radius: 90px;
 	border: 1px solid #30e0ff;
 }
 .cityImg {
 	display: inline-block;
-	padding: 10px;
+	padding: 25px;
 	
 }
 img {
@@ -34,12 +34,12 @@ img {
 	object-fit: cover;
 }
 .giphyImagesRow {
-	background-color: rgba(248,238,237,0.8);
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	color: rgb(166, 255, 255);
+	background-color: rgba(248, 238, 237, 0.205);
+
 }
 .giphyButtonsRow {
-	background-color: #30e0ff;
+	background-color: #30e0ffd8;
 	padding: 20px 10px;	
 }
 .giphyButton {
@@ -47,16 +47,10 @@ img {
 	margin: 10px;
 }
 .addButton {
-	background-color: #525252ec;
+	background-color: #202020ec;
 	padding: 15px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
-.tiny {
-	font-size: 10px;
-	text-align: center;
-	margin: 20px;
-}
+
 .rating {
 	font-family: 'Turret Road', cursive;
 	font-size: 20px;

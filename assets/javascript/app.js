@@ -87,8 +87,6 @@ function clickGiphyButton() {
                 $cityDiv.append($cityImg);
                 gifHolder.append($cityDiv);
 
-                $(".addButton").css("border-bottom-right-radius", "0");
-                $(".addButton").css("border-bottom-left-radius", "0");
             });
         });
 };
