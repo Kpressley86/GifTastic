@@ -7,7 +7,7 @@ body {
     background: url(../images/background.jpeg);
 }
 h1.giphy-tastic {
-	/* font-family: ; */
+	font-family: 'Turret Road', cursive;
 	font-size: 100px;
 	color: #525252ec;
 	text-shadow: 2px 2px #30e0ff;	
@@ -43,7 +43,8 @@ img {
 	padding: 20px 10px;	
 }
 .giphyButton {
-	width: 160px;
+	width: 140px;
+	margin: 10px;
 }
 .addButton {
 	background-color: #525252ec;
@@ -57,6 +58,6 @@ img {
 	margin: 20px;
 }
 .rating {
-	/* font-family: ; */
+	font-family: 'Turret Road', cursive;
 	font-size: 20px;
 }

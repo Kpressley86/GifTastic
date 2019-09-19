@@ -1,14 +1,12 @@
 // Array of Buttons // 
-var gifTasticle = [
+var topics = [
     "New Yory",
     "Miami",
     "Nashville",
     "Palm Springs",
     "Phoenix",
     "Chicago",
-    "Houston",
     "Dallas",
-    "Columbus",
     "Charlotte",
     "Seattle",
     "Detroit",
@@ -18,15 +16,16 @@ var gifTasticle = [
     "Wichita"]
 
 
-// Creates a New Button	//
-function createButtons() {
-    var $giphyButtons = $('.giphyButtons');
-    // Empty of existing buttons
+    var $itemButton = $('<button>')
+    
+    // Creates a New Button	//
+    function createButtons() {
+        var $giphyButtons = $('.giphyButtons');
+
     $giphyButtons.empty();
-    // Build jquery button object and append
-    $.each(gifTasticle, function (index, value) {
-        var $itemButton = $('<button>')
-            .attr("data-dessert", value)
+
+    $.each(topics, function (index, value) {
+            $('<button>').attr("data-city", value)
             .text(value)
             .addClass("btn btn-default giphyButton")
             .on("click", clickGiphyButton)
@@ -38,7 +37,7 @@ function createButtons() {
 // OnClick to start search //
 function clickGiphyButton() {
 
-    var search = $(this).data('dessert');
+    var search = $(this).data('city');
 
     // Replaces spaces with "+" //
     search = search.replace(" ", "+");
@@ -47,7 +46,7 @@ function clickGiphyButton() {
     $.ajax({
         url: "https://api.giphy.com/v1/gifs/search",
         data: {
-            limit: 12,
+            limit: 10,
             api_key: "t7L4fRfqSRx96gkzHLXA4s2ibVdaGXfA",
             q: search
         },
@@ -99,8 +98,8 @@ function clickGiphyButton() {
 $("#addButton").on("click", function () {
     var txtInput = $("#addButtonText").val().trim();
     
-    if (gifTasticle.indexOf(txtInput) == -1 && txtInput.length > 0) {
-        gifTasticle.push(txtInput);
+    if (topics.indexOf(txtInput) == -1 && txtInput.length > 0) {
+        topics.push(txtInput);
         $('#addButtonText').val("");
         $('#addButtonText').focus();
         createButtons();
