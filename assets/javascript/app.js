@@ -13,24 +13,24 @@ var topics = [
     "Boston",
     "Las Vegas",
     "Tucson",
-    "Wichita"]
+    "Wichita"];
 
 
-    var $itemButton = $('<button>')
-    
-    // Creates a New Button	//
-    function createButtons() {
-        var $giphyButtons = $('.giphyButtons');
+// Creates a New Button	//
+function createButtons() {
+    var $giphyButtons = $('.giphyButtons');
 
-    $giphyButtons.empty();
+    $('.giphyButtons').empty();
 
     $.each(topics, function (index, value) {
-            $('<button>').attr("data-city", value)
+        $('<button>').attr("data-city", value)
             .text(value)
             .addClass("btn btn-default giphyButton")
             .on("click", clickGiphyButton)
             .appendTo($giphyButtons);
     })
+
+
 };
 
 
@@ -63,10 +63,10 @@ function clickGiphyButton() {
                 // Create DIV = cityDiv //
                 var $cityDiv = $('<div>').addClass("cityImg");
 
-                
+
                 var $rating = $('<p>').text("Rating: " + results[key].rating).addClass("rating");
                 // Start/Stop image //
-                
+
                 var $cityImg = $('<img>').attr('src', results[key].images.fixed_height_still.url)
                     .attr('data-still', results[key].images.fixed_height_still.url)
                     .attr('data-animate', results[key].images.fixed_height.url)
@@ -95,16 +95,16 @@ function clickGiphyButton() {
 
 
 // Create new Buttons and check for existing //
-$("#addButton").on("click", function () {
+$("#addButton").on("click", function (event) {
+
+    event.preventDefault();
+
     var txtInput = $("#addButtonText").val().trim();
-    
-    if (topics.indexOf(txtInput) == -1 && txtInput.length > 0) {
+
         topics.push(txtInput);
-        $('#addButtonText').val("");
-        $('#addButtonText').focus();
+      
         createButtons();
-    }
-    return false;
+    
 });
 
 
