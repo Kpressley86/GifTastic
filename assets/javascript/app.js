@@ -44,10 +44,8 @@ function clickGiphyButton() {
 
     // Ajax //
     $.ajax({
-        url: "https://api.giphy.com/v1/gifs/search",
+        url: "https://api.giphy.com/v1/gifs/search?&limit=10&api_key=t7L4fRfqSRx96gkzHLXA4s2ibVdaGXfA",
         data: {
-            limit: 10,
-            api_key: "t7L4fRfqSRx96gkzHLXA4s2ibVdaGXfA",
             q: search
         },
         method: 'GET'
