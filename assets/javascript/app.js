@@ -1,3 +1,5 @@
+
+$(document).ready(function () {
 // Array of Buttons // 
 var topics = [
     "New Yory",
@@ -56,6 +58,7 @@ function clickGiphyButton() {
 
             // Empty images //
             gifHolder.empty();
+            
             $.each(results, function (key) {
 
                 // Create DIV = cityDiv //
@@ -94,16 +97,16 @@ function clickGiphyButton() {
 $("#addButton").on("click", function (event) {
 
     event.preventDefault();
-
+console.log("is this working?");
     var txtInput = $("#addButtonText").val().trim();
 
         topics.push(txtInput);
-      
+      console.log(topics);
         createButtons();
     
 });
 
 
-$(document).ready(function () {
+
     createButtons();
 });
