@@ -97,11 +97,11 @@ $(document).ready(function () {
     $("#addButton").on("click", function (event) {
 
         event.preventDefault();
-        console.log("is this working?");
+        
         var txtInput = $("#addButtonText").val().trim();
 
         topics.push(txtInput);
-        console.log(topics);
+       
         createButtons();
 
     });
