@@ -2,7 +2,7 @@
 $(document).ready(function () {
     // Array of Buttons // 
     var topics = [
-        "New Yory",
+        "New York",
         "Miami",
         "Nashville",
         "Palm Springs",
